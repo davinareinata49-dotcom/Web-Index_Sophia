@@ -1,0 +1,382 @@
+body{
+    background-image: url(Flowerbg.jpeg);
+}
+
+h1{
+    background-color: lch(99.03% 18.23 111.11);
+    color: rgb(33, 0, 26);
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    border-radius: 12px;  
+    padding: 3px 8px;
+}
+
+h2{
+    background-color: #f3dcf5;
+    color: rgb(33, 0, 26);
+    text-align: center;
+}
+
+div.biodata{
+margin: 30px auto;
+width: 70%;
+background-color: #e7ccee;
+color: hsl(201, 80%, 15%);
+padding: 30px;
+border-radius: 12px;
+}
+
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid hwb(290 33% 38%);
+}
+
+.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+.foto.img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.yumm{
+    text-align: center;
+}
+.Makanan.Kesukaan {
+    background-color:hsl(56, 76%, 92%);
+    color: rgb(33, 0, 26);
+    text-align: center;
+    display: inline-block;
+    border-radius: 12px;  
+    padding: 3px 8px; 
+    text-align: center;
+}
+.Makanan.Kesukaan h1 {
+    margin: 0;
+    background-color:hsl(56, 76%, 92%);
+}
+.foodiez {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 95%;
+    margin: 30px auto;
+}
+
+.food {
+    flex: 1;
+    padding: 10px;
+    height: 240px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.food:nth-child(1) {
+    background-color: #ffdcfe;
+}
+
+.food:nth-child(2) {
+    background-color: hsl(309, 100%, 91%);
+}
+
+.food:nth-child(3) {
+    background-color: #ffc9fa;
+}
+
+.food:nth-child(4) {
+    background-color: hwb(301 84% 0%);
+}
+
+.food:nth-child(5) {
+    background-color: hwb(300 89% 0%);
+}
+
+.food img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.food p {
+    margin: 12px 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.food:hover {
+    transform: scale(1.1);
+}
+.summer{
+    text-align: center;
+}
+.Minuman.Kesukaan {
+    background-color:lab(90.99% 16.57 -7.56);
+    color: rgb(33, 0, 26);
+    text-align: center;
+    display: inline-block;
+    border-radius: 12px;  
+    padding: 3px 8px; 
+    text-align: center;
+}
+.Minuman.Kesukaan h1 {
+    margin: 0;
+    background-color:lab(90.99% 16.57 -7.56);
+}
+.hydrated {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 95%;
+    margin: 30px auto;
+}
+
+.drink {
+    flex: 1;
+    padding: 10px;
+    height: 240px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+/* warna tiap card */
+.drink:nth-child(1) {
+    background-color: #fffcc8;
+}
+
+.drink:nth-child(2) {
+    background-color: #f6f7d9;
+}
+
+.drink:nth-child(3) {
+    background-color: #ded3aa;
+}
+
+.drink:nth-child(4) {
+    background-color: hsl(75, 76%, 92%);
+}
+
+.drink:nth-child(5) {
+    background-color: hwb(52 73% 7%);
+}
+
+.drink img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.drink p {
+    margin: 12px 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.drink:hover {
+    transform: scale(1.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+.playlist {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #121212;
+    color: white;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.playlist-header {
+    height: 320px;
+    display: flex;
+    align-items: flex-end;
+    gap: 35px;
+    padding: 40px;
+    background: linear-gradient(
+        to bottom,
+        #8d5cc7,
+        #5d3b80,
+        #121212
+    );
+}
+
+.playlist-cover {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    transform: translateY(-60px);
+}
+
+.playlist-info {
+    padding-bottom: 5px;
+    transform: translateY(-60px);
+}
+
+.playlist-type {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.playlist-info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.playlist-description {
+    margin: 0 0 10px;
+    color: #d0d0d0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.playlist-owner {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.playlist-content {
+    padding: 20px 35px 40px;
+    transform: translateY(-60px);
+}
+
+.playlist-controls {
+    margin-bottom: 15px;
+}
+
+.play-button {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #b77cff;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.play-button:hover {
+    transform: scale(1.08);
+}
+
+.song-header,
+.song {
+    display: grid;
+    grid-template-columns:
+        40px
+        minmax(250px, 1fr)
+        1fr
+        300px;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.song-header {
+    padding: 12px 10px;
+    border-bottom: 1px solid #333;
+    color: #a7a7a7;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.song {
+    min-height: 55px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    color: #b3b3b3;
+    transition: background 0.2s;
+}
+
+.song:hover {
+    background: #292929;
+    color: white;
+}
+
+.number {
+    text-align: center;
+    font-size: 14px;
+}
+
+.song-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.song-title img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.song-title p {
+    margin: 0 0 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 525;
+}
+
+.song-title small {
+    color: #a7a7a7;
+    font-size: 13px;
+    font-weight: 450;
+}
+
+.song audio {
+    width: 300px;
+    height: 40px;
+    opacity: 80%;
+}

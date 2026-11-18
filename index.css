@@ -1,0 +1,266 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f8f4fc;
+}
+
+.header {
+    background-color: #eee5f7;
+    padding: 20px;
+    text-align: center;
+}
+
+/* style untuk navigator */
+.topnav {
+    overflow: hidden;
+    background-color: #9b7bbd;
+    padding: 15px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #eee5f7;
+    color: #68458a;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 25%;
+}
+
+.column.middle {
+    width: 50%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: #eee5f7;
+    padding: 10px;
+    text-align: center;
+}
+
+/* TABLE */
+table, th, td {
+    border: 2px solid #c5a9df;
+    border-radius: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 25px auto;
+    background-color: #fcf9ff;
+    box-shadow: 0 4px 15px #d5c1e8;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    color: #655078;
+}
+
+th {
+    background-color: #d9c5ed;
+    color: #412e52;
+}
+
+th[colspan="4"] {
+    background-color: #a98bc9;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+tr {
+    background-color: #faf6ff;
+}
+
+tr:nth-child(even) {
+    background-color: #eee5f7;
+}
+
+tr:hover {
+    background-color: #d8c5ee;
+    transition: 0.3s;
+}
+
+tr:last-child {
+    background-color: #d5c4e8;
+    font-weight: bold;
+}
+
+/* LIST */
+.container {
+    background-color: #f0e7f7;
+    margin: 20px 25px;
+    padding: 8px;
+    border: 2px solid #d8c5e8;
+}
+
+.section {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section h3 {
+    font-size: 16px;
+    margin: 0 0 12px 0;
+    color: #59436d;
+}
+
+.list-box {
+    padding: 8px;
+    margin: 5px;
+    border: 3px solid;
+}
+
+/* FOOD LIST */
+.food-list {
+    background-color: #d7b9ed;
+    border-color: #b994df;
+}
+
+.food-list ol {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0 5px;
+    list-style-type: upper-roman;
+}
+
+.food-list li {
+    background-color: #e6d5ff;
+    color: #3b2057;
+    padding: 6px;
+    margin: 3px 0;
+    border: 1px solid #c9aee8;
+}
+
+/* DRINK LIST */
+.drink-list {
+    background-color: #cbb9e2;
+    border-color: #a98bc9;
+}
+
+.drink-list ul {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0 5px;
+    list-style-type: circle;
+}
+
+.drink-list li {
+    background-color: #eee5f7;
+    color: #3b2057;
+    padding: 6px;
+    margin: 3px 0;
+    border: 1px solid #d2bde8;
+}
+
+/* COMBINE LIST */
+.combine-list {
+    background-color: #d5c8eb;
+    border-color: #b9a3db;
+}
+
+.combine-list ol,
+.combine-list ul {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 5px 25px;
+}
+
+.combine-list li {
+    background-color: #eee3fa;
+    color: #3b2057;
+    padding: 6px;
+    margin: 3px 0;
+    border: 1px solid #d6c4eb;
+}
+
+/* ICON LIST */
+.icon-list {
+    background-color: #cbb9e2;
+    border-color: #a98bc9;
+}
+
+.icon-list ul {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0 25px;
+    list-style-type: square;
+}
+
+.icon-list li {
+    background-color: #e8dcf5;
+    color: #3b2057;
+    padding: 7px;
+    margin: 3px 0;
+    border: 1px solid #cdb9e5;
+}
+
+.icon-list i {
+    color: #8061a5;
+    margin-right: 5px;
+}
+
+.icon-list svg {
+    vertical-align: middle;
+    color: #8061a5;
+}
+
+/* HOVER EFFECT */
+.list-box li {
+    transition: 0.3s;
+}
+
+.list-box li:hover {
+    background-color: #cbb4e5;
+    color: #321747;
+    cursor: pointer;
+    transform: translateX(4px);
+}
+
+.list-box ol,
+.list-box ul {
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+.list-box ol ol,
+.list-box ol ul {
+    padding-left: 25px;
+}
